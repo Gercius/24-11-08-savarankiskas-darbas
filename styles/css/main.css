@@ -1,3 +1,18 @@
+/*
+    Typography
+*/
+/*
+    Backgrounds
+*/
+/*
+    Borders
+*/
+/*
+    Container properties
+*/
+/*
+    Breakpoints
+*/
 *,
 *::before,
 *::after {
@@ -17,6 +32,14 @@ body {
 img {
   max-width: 100%;
   display: block;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+body {
+  font-family: "Poppins", system-ui, sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

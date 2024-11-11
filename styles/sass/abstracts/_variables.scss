@@ -1,0 +1,52 @@
+/*
+    Typography
+*/
+$font-stack: "Poppins", system-ui, sans-serif;
+
+$text-h1: 26px;
+$text-p1: 26px;
+$text-p2: 20px;
+$text-p3: 18px;
+$text-p4: 14px;
+
+$text-dark: #000000;
+$text-dark-transparent: #00000080;
+$text-gray: #7c838a;
+$text-gray-light: #b0bac3;
+$text-yellow: #f9ed32;
+
+/*
+    Backgrounds
+*/
+$bg-main: linear-gradient(126.22deg, #f9ed32 4.79%, #d9bd32 54.4%);
+$bg-hero: #e6f3ffbf;
+
+$bg-form-input: #b0bac366;
+
+$bg-button-primary: #f9ed32;
+$bg-button-secondary: transparent;
+
+/*
+    Borders
+*/
+$border-gray: 1px solid #7c838a;
+
+$border-radius-1: 20px;
+$border-radius-2: 15px;
+$border-radius-3: 10px;
+
+/*
+    Container properties
+*/
+$max-width: 1440px;
+
+/*
+    Breakpoints
+*/
+$breakpoints: (
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px,
+);
