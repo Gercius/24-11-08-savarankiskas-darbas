@@ -1,0 +1,15 @@
+{
+    "name": "24-11-06-sass",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch styles/sass:styles/css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "sass": "^1.80.6"
+    }
+}
