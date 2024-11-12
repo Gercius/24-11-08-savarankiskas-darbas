@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
-@use "base/base";
-@use "base/helpers";
-@use "base/typography";
+@use "./base/base";
+@use "./base/typography";
+
+@use "./layout/container";
+@use "./layout/header";
+@use "./layout/main";
+@use "./layout/footer";
+@use "./layout/register-images";
+
+@use "./components/form";

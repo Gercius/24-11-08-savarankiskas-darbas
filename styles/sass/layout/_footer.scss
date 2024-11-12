@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+footer {
+    p {
+        margin-top: 5.25rem;
+        @include font(p2);
+        color: $text-gray;
+        text-align: center;
+    }
+}

@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+.register-form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .form-field {
+        margin-top: 70px;
+
+        label,
+        input {
+            @include font(p2);
+        }
+
+        label {
+            font-weight: 500;
+            color: $text-gray;
+        }
+
+        input {
+            background-color: $bg-form-input;
+            width: 100%;
+            color: $text-dark-transparent;
+            border: none;
+            padding: 18px 40px;
+            border-radius: $border-radius-1;
+        }
+    }
+
+    .submit-btn {
+        @include font(p1);
+        font-weight: 500;
+        display: block;
+        margin: 40px auto 0 auto;
+        padding: 0.65rem 5.1rem;
+        border: none;
+        background-color: $bg-button-primary;
+        border-radius: $border-radius-3;
+    }
+
+    > p {
+        @include font(p3);
+        color: $text-gray;
+        margin-top: 1rem;
+
+        .redirect-to-login {
+            text-decoration: none;
+            color: $text-yellow;
+        }
+    }
+}

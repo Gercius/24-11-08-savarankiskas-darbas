@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+header {
+    h1 {
+        @include font(h1);
+        font-weight: 600;
+        text-align: center;
+    }
+}

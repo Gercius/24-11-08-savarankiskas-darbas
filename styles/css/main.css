@@ -10,9 +10,6 @@
 /*
     Container properties
 */
-/*
-    Breakpoints
-*/
 *,
 *::before,
 *::after {
@@ -22,11 +19,16 @@
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
-  min-height: 100%;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+@media screen and (min-width: 1100px) {
+  body {
+    background: linear-gradient(126.22deg, #f9ed32 4.79%, #d9bd32 54.4%);
+  }
 }
 
 img {
@@ -34,12 +36,183 @@ img {
   display: block;
 }
 
-.container {
-  max-width: 1440px;
+label {
+  display: block;
+}
+
+button,
+label,
+input {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
   font-family: "Poppins", system-ui, sans-serif;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 1rem;
+}
+.container .register-images {
+  max-width: 595px;
+  width: 100%;
+  display: none;
+}
+.container .main-content-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+}
+@media screen and (min-width: 1100px) {
+  .container {
+    padding: 0;
+    display: flex;
+    background-color: rgba(230, 243, 255, 0.7490196078);
+  }
+  .container .bg-secondary {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+  }
+  .container .register-images {
+    display: block;
+  }
+  .container .main-content-wrapper {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .container .main-content-wrapper header,
+  .container .main-content-wrapper main,
+  .container .main-content-wrapper footer {
+    padding: 0 1rem;
+  }
+  .container .main-content-wrapper header {
+    margin-top: 124px;
+  }
+  .container .main-content-wrapper footer {
+    margin-bottom: 44px;
+  }
+}
+
+header h1 {
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 600;
+  text-align: center;
+}
+
+main .or {
+  font-size: 26px;
+  line-height: 39px;
+  color: #b0bac3;
+  margin-top: 40px;
+  text-align: center;
+}
+main .register-alternatives {
+  max-width: 500px;
+  margin: 1rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+main .register-alternatives a {
+  padding: 0 0.5rem;
+  border: 1px solid #7c838a;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+main .register-alternatives a span {
+  font-size: 14px;
+  line-height: 24px;
+  color: #7c838a;
+}
+
+footer p {
+  margin-top: 5.25rem;
+  font-size: 20px;
+  line-height: 30px;
+  color: #7c838a;
+  text-align: center;
+}
+
+.register-images {
+  position: relative;
+  overflow: hidden;
+}
+.register-images img {
+  position: absolute;
+}
+.register-images :nth-child(1) {
+  z-index: 4;
+  left: 47px;
+  top: 190px;
+}
+.register-images :nth-child(2) {
+  z-index: 3;
+  top: 448px;
+}
+.register-images :nth-child(3) {
+  z-index: 2;
+  top: 79px;
+  left: 103px;
+}
+.register-images :nth-child(4) {
+  top: 143px;
+  left: 24px;
+}
+
+.register-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.register-form .form-field {
+  margin-top: 70px;
+}
+.register-form .form-field label,
+.register-form .form-field input {
+  font-size: 20px;
+  line-height: 30px;
+}
+.register-form .form-field label {
+  font-weight: 500;
+  color: #7c838a;
+}
+.register-form .form-field input {
+  background-color: rgba(176, 186, 195, 0.4);
+  width: 100%;
+  color: rgba(0, 0, 0, 0.5019607843);
+  border: none;
+  padding: 18px 40px;
+  border-radius: 20px;
+}
+.register-form .submit-btn {
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 500;
+  display: block;
+  margin: 40px auto 0 auto;
+  padding: 0.65rem 5.1rem;
+  border: none;
+  background-color: #f9ed32;
+  border-radius: 10px;
+}
+.register-form > p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #7c838a;
+  margin-top: 1rem;
+}
+.register-form > p .redirect-to-login {
+  text-decoration: none;
+  color: #f9ed32;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,7 @@
+@use "./variables" as *;
+@use "sass:map";
+
+@mixin font($style) {
+    font-size: map.get($fonts, $style, font-size);
+    line-height: map.get($fonts, $style, line-height);
+}

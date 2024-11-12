@@ -3,11 +3,28 @@
 */
 $font-stack: "Poppins", system-ui, sans-serif;
 
-$text-h1: 26px;
-$text-p1: 26px;
-$text-p2: 20px;
-$text-p3: 18px;
-$text-p4: 14px;
+$fonts: (
+    h1: (
+        font-size: 26px,
+        line-height: 39px,
+    ),
+    p1: (
+        font-size: 26px,
+        line-height: 39px,
+    ),
+    p2: (
+        font-size: 20px,
+        line-height: 30px,
+    ),
+    p3: (
+        font-size: 18px,
+        line-height: 27px,
+    ),
+    p4: (
+        font-size: 14px,
+        line-height: 24px,
+    ),
+);
 
 $text-dark: #000000;
 $text-dark-transparent: #00000080;
@@ -18,8 +35,10 @@ $text-yellow: #f9ed32;
 /*
     Backgrounds
 */
-$bg-main: linear-gradient(126.22deg, #f9ed32 4.79%, #d9bd32 54.4%);
-$bg-hero: #e6f3ffbf;
+$bg-page: linear-gradient(126.22deg, #f9ed32 4.79%, #d9bd32 54.4%);
+$bg-container: #e6f3ffbf;
+$bg-container-secondary: #ffffff;
+$bg-main-content: #ffffff;
 
 $bg-form-input: #b0bac366;
 
@@ -38,15 +57,4 @@ $border-radius-3: 10px;
 /*
     Container properties
 */
-$max-width: 1440px;
-
-/*
-    Breakpoints
-*/
-$breakpoints: (
-    "sm": 576px,
-    "md": 768px,
-    "lg": 992px,
-    "xl": 1200px,
-    "xxl": 1400px,
-);
+$ctn-max-width: 1440px;

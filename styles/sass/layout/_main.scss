@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+main {
+    .or {
+        @include font(p1);
+        color: $text-gray-light;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .register-alternatives {
+        max-width: 500px;
+        margin: 1rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            padding: 0 0.5rem;
+            border: $border-gray;
+            border-radius: $border-radius-2;
+            display: flex;
+            align-items: center;
+
+            span {
+                @include font(p4);
+                color: $text-gray;
+            }
+        }
+    }
+}
